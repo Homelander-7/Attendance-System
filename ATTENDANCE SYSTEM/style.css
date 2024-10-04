@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(247, 249, 252);
+}
+.logo{
+    width:50px;
+    height:50px;
+    border-radius: 20px ;
+}
+.top{
+    display: flex;          /* Use flexbox to align items */
+    align-items: center; 
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color:rgb(233, 226, 226);
+    border:2px solid;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+th {
+    background-color: #2b94f7;
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.button:disabled {
+    background-color: #d3d3d3;
+}
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+}
+ input[type="radio"] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+  }
+
+label{
+    display: inline-block;
+    background-color: #ddd;
+    padding: 10px 20px;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    border: 2px solid #444;
+    border-radius: 4px;
+}
+
+input[type="radio"]:checked + label{
+    background-color:#bfb;
+    border-color: #4c4;
+}
+
+.redLabel{
+    color:red;
+}
+
+.redLabel:checked + label{
+    background-color: rgb(250, 66, 66) !important;
+    border-color:rgb(250, 2, 2) !important;
+}
+
+ .input[type="radio"]:focus + label{
+    border: 2px dashed #444;
+}
+
+    label:hover{
+    background-color: rgb(143, 243, 13);
+  }

@@ -1,0 +1,36 @@
+<html ng-app="myfacultyApp">
+    <head>
+        <title>EMU ATTENDANCE SYSTEM</title>
+        <link rel="stylesheet" href="style.css">
+        <script src = "app/lib/angular.min.js"></script>
+        <script src = "app/app.js"></script>
+        <link rel="icon" href="img\emu_logo.png" type="image/x-icon">
+    </head>
+<body ng-controller = "attycontroller">
+    <div class="top">
+    <img src="img/emu_logo.png" class="logo">
+    <h2 style="margin-left: 20px;">Student Attendance</h2>
+    </div>
+
+    <table id="tablue">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Student No.</th>
+                <th>Full Name</th>
+                <th id ="headDate">{{ the_date | date:'EEEE, MM/dd/yyyy' }}</th>              
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+
+    <div class="actions">
+        <button class="button" ng-click="selectAll()">Select All</button>
+        <button class="button" ng-click="sendData()">Submit</button>
+        <button class="button">Import</button>
+    </div>
+
+</body>
+</html>
